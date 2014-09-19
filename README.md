@@ -1,6 +1,8 @@
 #v2.0.2
-- Updated content to be current with Chef 11.16
-  - Checked all labs
-  - Refreshed output
-- Brought into line with CentOS version
-- Fixed typos
+-) Edits made by Steve Murawski to fix issues raised by Larry Eichenbaum and Sascha Bates
+
+-) Tried to convert to new template (Chef-Fundamentals-Windows__NewTemplate.pptx), but PPT seems buggy
+- cant implement some templates, and
+- PowerPoint keeps crashing when I change templates on some slides.
+
+Spend too much time on this so parked it for now and will revisit.
