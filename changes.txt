@@ -1,0 +1,386 @@
+Thu Oct 9 00:44:16 2014 -0700 31c682977e05033f337c17e1a0b7899dd1a4b6e4 (HEAD, tag: v2.0.1)
+
+amend 11 - finished. Please review - full notes below
+
+Full list of changes also in the accompanying in the changes.txt
+
+0 - added final slide with Mandatory things to change in a deck prior to presentation. - added suggestions
+ - with approval make this hidden slide the first slide of the deck.
+ - can accumulate internal notes, etc..
+
+3 - updated alex intro
+12 (Stages of Learning - Shuhari) - changed instructor note to font 16 from 18
+34 (Chef Solves This Problem) - Chef logo was missing - inserted Chef logo
+45 (Environments) - removed first bullet to match linux deck
+ - too much info too early on. Old text is not in Presenter comments "An environment is a container within an organization that can mimic structural hierarchy via custom attributes and cookbook restraints "
+51 (nodes) - updated first bullet to "Nodes represent anything that needs configuration" (from: http://youtu.be/bAWjqE5FCxI?t=20m53s)
+57 (Example Recipe) - remade to match style of the Linux recipe
+58 (or this) - swapped out SMTP slide for Apache2. 
+ - it's better match - IIS on windows, Apache on Linux.
+ - (instructor notes) the code walkthrough is optional
+ - original slide hidden - to be deleted by John Fitz.
+
+64 (Search) - added bullet point "much more.."
+65-79 (Search for Nodes) - ***** NEW SLIDES *** 
+ - slides taken from the linux deck
+ - good flow
+ - slides modified to use 'windows' names where appropriate
+ - original slides Hidden to be deleted by John Fitz
+
+65 (Search for Nodes - Recipe)
+ - added instructor notes
+ - changed slide title to include "recipe"
+66 - added instuctor notes
+74 - added instuctor notes
+82 - added instuctor notes
+
+
+   Original Slides
+  65 - (Search for nodes)
+   - change instructor notes font to 16 (from 20)
+   - moved green bar to not block text
+   - added to instructor notes "This is done every single time chef runs! Think Auto Healing!"
+
+  67/68 (Pass results into Templates) - expanded orange boxes to not cover any of the text
+
+11+71 - (...this can happen automatically) - removed 2nd dark square, It was offset for some reason
+11+72 - (Count the Resources) - removed 2nd dark square, It was offset for some reason
+
+11+75 - (Design Tenets of Chef) minor update to the notes - clean up unnecessary spaces at start of instructor notes
+11+76 (*** NEW SLIDE***) - added a slide and a link to where these terms came from. 
+
+
+11+80-83 (Legend section)
+ - moved here from start of the deck (17-20) to match the Linux deck.
+ - Plus this is a better place for it anyhow
+
+11+84 - (Landscape of a Chef-managed Infrastructure) fixed to show that items exist, but they are not actually connected. Actual image is not modified, I just added overlays.
+- added white box to cover the arrow from workstation to server
+- adjusted image size to match other slides with same image
+
+11+85 - (Exercise: Configure Management Station) instructor notes - add a note for when this change is actually needed && change font size from 20 to 16
+
+11+89 (Workstation Setup)
+ - *** create hidden slide for manual workaround on windows - may just use one of these as unattended given that we dont actually download an OSX package via browser on a mac.
+ - update URL to http://downloads.getchef.com/
+ - update instructor comments 
+ - removed comments as they are no longer relevant: 
+   "The versions shown for Windows are for Windows Server, but you're probably not running that one your workstation, so get the closest without going over (2008 ~= Windows7, 2012 ~=Windows8)
+
+  <<WIP: ‘https://www.getchef.com/chef/install.msi ’ points to version 11.10.2-1 by default, so if folks use this they’ll be out of sync with those who download 11.8"
+ - updated screenshot
+
+11+90 - (Install on Windows - updated screenshots)
+11+92 - (What just happened?) correct install path for windows from c:\chef to c:\opscode
+
+11+93 - (Workstation or Node?)
+- fixed the slides to illustrate that nodes and workstation have similar components
+- added istructor comment - the only different is not just the command, but the certificate on the workstation.
+- added white box to cover the arrow from workstation to the server
+- adjusted image size to match other slides with same image
+
+11+94 - (Landscape of a Chef-managed Infrastructure) added '?' to illustrate nodes (same as in previous slides)
+- removed the arrow from workstation to server since they are not connected yet
+- adjusted image size to match other slides with same image
+
+11+95 - (Your Chef Server for this class...)
+- update screenshots
+- change arrow to blue(orange on orange doesnt work)
+- removed some extra images in the margins of the slide
+- chopped image to fit the slide.
+
+Warning - 11+95 -why is it important to setup a new org? I think it's the other way. We should encourage students to use their existing org, as long as it's not a company one. Keeps our chef server clean and they have one place for all their experiments.
+
+11+97 - **New Slide** (Create new Organization) created new slide to reflect changes in the website org creation. Got tons of questions on this via email/in person.
+- ******* this slide should be added to the Linux Deck
+
+11+98 - (Download "Starter Kit" for your Org)
+ - cropped off-screen image
+ - changed c:\users\you\chef-repo to c:\chef-repo - this is where I see 'mature' students stick it anyway, the rest get totally confused and some have totally lost. KISS.
+ - added bullet point instead of the whole "what is the starter kit slide" - "We’ll look at it in detail shortly…"
+- added (What is the Starter Kit?) slide from linux deck but skipped it. It's too redundant
+
+- ********** i think the story on the Linux deck is broken here. Windows deck has better flow
+
+11+99 - (Landscape of a Chef-managed Infrastructure) adjusted image size to match other slides with same image
+- added '?' to represent nodes
+
+11+106 (knife.rb)
+- added (osx) behind linux path
+- added <project>/ to project specific .chef path
+
+118 (knife.rb) - fixed the repo location for windows.
+
+11+108 (verify knife) - updated version number
+- added bullet to reopen powershell
+
+11+109 (knife client list) - Updated instructor notes. Nuked DEBUG output, it was from 2013 and adds no value in instructor notes.
+- cleaned up some images in background
+
+11+111 (Exercise: Run ‘knife client list’) - Instructor notes updated to include "Dont go forward until everyone is successful."
+
+11+113 (Best Practice: Use a text editor with a project drawer, or equivalent)
+ - nuke empty space in instructor notes
+ - increased font size for slide title
+
+11+115 (If you do not have a preferred text editor on your workstation already...) - instructor comments - remove Trello link
+
+***--11+115 - 11+116 - hidden slides have old versions of manual editor settings for windows. Could not locate new version.
+
+11+116 (Checkpoint)
+ - update image dimensions to match other slides
+ - add '?' representing nodes
+ 
+128 (What's next) - ** Uncommented slide **
+129 (Source Code Repository) - ** Uncommented slide **
+
+2+11+117 (review questions)
+- instructor nodes - added answer for what is knife
+
+2+11+120 - (Checkpoint) - **** hidden as per notes on the slide and i agree.
+
+13+121 (organizations)
+ - added instructor notes.
+ - moved Enterprise chef reference to the bottom
+ - change wording from "Provide multi-tenancy in Enterprise Chef" to "Enterprise Chef provides multi-tenancy". 
+
+13+122 (Manage Organizations)
+ - update screenshots
+ - add Select management console text
+
+13+123 (organizations) - update screen shot
+13+124 (manage organizations) - update screen shot
+13+125 (manage organizations)
+ - remove presenter note re inviting not working
+ - leaving WIP marking to be removed by John
+13+128 (Exercise: Invite a classmate into your org)
+ - update screenshot
+ - update instructor notes
+
+13+130 (Exercise: View classmate's org) - update logo on the slide
+13+131 (Exercise: Revoke access) - update logo on the slide
+
+13+134 (Lesson Objectives) - update wording from 'Install Chef nodes using "knife bootstrap"' to 'Install chef-client on a node using "knife bootstrap"'
+
+13+136 (old 142) (Install Windows plugin for Knife) - moved slide to the start of the section
+- per personal observations and john fitzpatricks
+- added presenter note about hidden slide and flags
+- created hidden slide with --no-ri flags in case network is SUPER slow
+
+150 (Nodes) - updated text to match Linux deck
+151 (We Have No Nodes Yet) - updated screenshot
+
+152(training node) - removed linux related comment
+- presenter notes text removed "There is also an EC2 AMI ‘oc-training-public’, but its Ubuntu, and the labs are based around CentOS (Apache lab will not work as the configuration is different between RHEL & Ubuntu)"
+- presenter notes text added "note about cloudshare failing"
+- added border around the image to keep it from bleeding on the screen
+
+153 (CloudShare Node) - added URL: <Class URL goes here>
+- removed the rest of the text
+
+154 - 156 (CloudShare Node) 
+ - ***added*** / updated slides to match Linux fundamentals
+
+159 ("Bootstrap" the Target Instance)
+- remove linux related comment from presenter notes - "If you get prompted for the password again, this is *sudo* not Chef. The -P is passed to the SSH connection.
+"
+
+160 - 165 - *** New slides from linux deck
+ - skipping first bootstrap slide - it's redundant with 2nd
+
+166 (What just happened?) - update presenter notes to correct windows path c:\opscode
+
+167 (Workstation or Node?)
+ - redundant slide...
+ - renamed to say "review"
+
+172 (Verify the log level on your test node)
+ - added a slide to verify the change.
+ - ** Change Slide hidden**
+
+174 (View Node on Chef Server) - updated slide text
+
+***188 - (Recipe Naming)
+ - Needs to move somewhere - this isn't the right place for it.
+- moved just before the first action on node run_list (slide 217) (meaning I dont think it's useful to have explanation of recipe naming as slide 400 currently in the linux deck)
+
+194 (Exercise:  Add a powershell resource to install IIS) - moved the highlight box to not block the text
+- added "open in editor..." to slide
+
+200 (Exercise:  Add a service resource to ensure the service is started and enabled) -
+- removed "at boot" - with Chef it's per chef run.
+- adjusted the box to not block text
+
+205 (Package resource)
+ - Renamed to Serice resource
+ - remade the slide to be "windows"
+
+207 **New Slide**
+ - remake of the hidden slide with some provider code.
+ - During my classes I tell students to go look at code, I think this is a very approrpiate place for it. And it's just before the break too.
+
+****** Linux Deck slide 201 is out of order (imo it should be after the 3rd resource instead of after 2nd)
+
+***TODO : (What’s with the ‘default’ subdirectory?)
+ - instead of skipping the slide we should find a community cookbook that actually uses this functionality.
+
+213 - (Full contents of  the IIS_demo recipe)
+ - fixed double quotes around file to single
+ - updated gist
+ ** All gists should be nuked in favor of public repo that's up to date
+
+
+ 219 (Exercise: Add iis_demo recipe to node’s run list)
+  - renamed title of the slide to remove apache
+  - added a link to the bug and add it to notes
+  - added all the variations of a fix 
+  ??- adding workaround to the main slide.
+
+223 - ** Slide added * - take 5 for a break
+- this section is way too long
+- this place should have a break because a number of students will need to catch up.
+
+224 - * Slide added** (Reading the output of a chef-client run)
+- slide added from linux deck & updated to windows deck.
+
+225 - cleaned up output
+226 - cleaned up output
+
+229/230  - (idempotence) slides - moved to just in front of re-run chef client slides (was 224/225)
+-- added relevant discussion bits from HipChat converation about this slide to presenter notes.
+
+231<-->232 (hidden slides) - copied over from linux deck
+******** Why are they hidden??
+
+****** LINUX 242 - Pem key slides are still broken
+- pem files are not displayed on slides.
+
+251-257 (Private keys) - fix skiles to display keynames instead of gray boxes.
+
+TODO******** 264-266 - perhaps change the whole flow into widows recipes?
+263 (Recipe order is important!)
+ - changed apache to iis_demo
+ - changed the rest of the flow to iis_demo resource collection
+
+266 (Resource collection - multiple recipes) - Note: cookbook_file truncated to fit the slide
+
+283 (Exercise: Run Ohai on Target) - added notes for OH
+
+286/287 (Exercise: Show only the fqdn attribute) - updated output. 
+
+362 (Exercise:  Create a default.rb attribute file in the iis_demo cookbook)
+ - reduce attribute font to make them fit on 1 line
+
+*** 365 (Enter the not_if and only_if metaparameters)
+ - we now have :guard_interpreter and we should teach it here
+ - it's actually really cool that we can dempnstrate to the windows folks that not_if can be in CMD / Ruby / Powershell, etc..
+ - historically this slide/functionality is what drove me up the wall and eventually lead to :guard_interpreter being created.
+
+********** Linux slide are broken. Website has been update, and search no longer shows the guards as part of resources.
+
+368 (Exercise: Search for more information about Resources)
+ - slide was totally busted. PPTX conversion playing tricks?
+ - updating screenshots
+
+369 - recreated slide with new screenshots
+
+370 (Exercise: Search for more information about Resources)
+ - slide was totally busted. PPTX conversion playing tricks?
+ - recreated slide with new screenshots
+
+372 (Exercise: Stop the Default Web Site with Powershell resource)
+- changed font color to make text visible and placed it into a red box - matching linux deck formatting .
+
+375 (Exercise: Iterate over each IIS site ) - added border
+
+376 (Exercise: Iterate over each IIS site ) - instructor notes font 16
+
+377 - adjust placement to fit with prior slide.
+
+378 (Variables and interpolation ) - un-hiding the slide
+ - this is way more relevant to windows folks 
+ - changing title to "Pop Quiz: Variables and interpolation "
+
+379 (Exercise:  Add an iis_site resource to install the new sites)
+- fixing formatting
+- seems later in the deck more and more boxes are in the wrong places
+
+*******
+380 (Exercise:  Add a Web Site with Powershell_script resource)
+ - brain exploded - need to reboot
+ - recipe needs to be condensed
+
+381 (Template Variables) moved in front of (Exercise: Use a template to create Default.htm for each site)
+
+382 (Notifications) moved in front of (Exercise: Use a template to create Default.htm for each site)
+
+
+385 (The entire recipe) - added 'safe' image to gist to fill up the white space
+- converted to Tiny URL
+
+397 (  Indexing and search delay) - carried over from Linux deck
+
+398 (remember what you're searching for)
+ - bad formatting. I wonder if this is because ppt/keynote dont play well. I see that a lot with even remotely complex slides.
+
+ 407 added recipe naming slide again to match the linux deck
+  - review
+
+416/417 (Best Practice: Data Bags are commonly managed in two ways)
+ - skipping slide
+ - another malformatted slide
+
+418 (create a data bag named users) - fix font color
+437 (re-run the chef client) - fix font color
+438 (re-run the chef client) - fix font color
+
+451/452 - adding hidden slide on how to do it via knife command.
+
+**** - no change
+457 (Exercise: Edit the webserver role)
+ - if the powershell is simplified, this part will stop working and will need to go back to original.
+
+ 465 (Exercise: Create the base role) - fix formatting
+
+ 467 (Exercise: 
+Add the base role to the webserver role’s run list) - fix formatting
+
+479/480 (Best Practice: Environments live in your chef-repo, until they don’t) - hiding slide to match Linux deck.
+
+
+***** BUG The hidden slide in linux deck has bad syntax
+487 (Exercise: Change your node’s environment to "dev")
+ - unskipping knife version of the command
+ - fixing the syntax
+
+491 (Exercise: Change your node’s environment to "production") 
+ - swapping out GUI command to command line
+ - original UI slide hidden.
+
+497 (Using Community Cookbooks) - i feel like screenshots in this section will always be outdated (supermarket is getting a lot of love)
+
+507 (Exercise: Use knife to search the community site) - update sreen spew
+
+508 (Exercise: Use knife to show the chef-client cookbook on the community site)
+ - updated output. New supermarket output is different from before.
+
+509 (Exercise: Download the chef-client cookbook) - update text to current version
+
+510 - updated instructor comment
+
+******* Linux deck has the same error
+530 (unloading chef-client) - chef-client has a dependency on windows
+ - added exercise for stuents to do it themselves.
+
+***** Linux deck is missing Questions sectin for supermarket
+
+542 - 547 (Working with Chef, the company)
+ - section updated with slides from linux deck
+
+549 (google group ) - slide added
+
+522 (Food Fight Show) - slide updated from linux deck.
+
+554 (Local Meetup Groups) - slide added (plus two hidden slides re EU meetups)
+
+End - added Day 1 hidden slides
