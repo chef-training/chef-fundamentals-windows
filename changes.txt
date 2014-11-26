@@ -43,24 +43,24 @@ Full list of changes also in the accompanying in the changes.txt
 
   67/68 (Pass results into Templates) - expanded orange boxes to not cover any of the text
 
-11+71 - (...this can happen automatically) - removed 2nd dark square, It was offset for some reason
-11+72 - (Count the Resources) - removed 2nd dark square, It was offset for some reason
+82 - (...this can happen automatically) - removed 2nd dark square, It was offset for some reason
+83 - (Count the Resources) - removed 2nd dark square, It was offset for some reason
 
-11+75 - (Design Tenets of Chef) minor update to the notes - clean up unnecessary spaces at start of instructor notes
-11+76 (*** NEW SLIDE***) - added a slide and a link to where these terms came from. 
+86 - (Design Tenets of Chef) minor update to the notes - clean up unnecessary spaces at start of instructor notes
+87 (*** NEW SLIDE***) - added a slide and a link to where these terms came from. 
 
 
-11+80-83 (Legend section)
+91-94 (Legend section)
  - moved here from start of the deck (17-20) to match the Linux deck.
  - Plus this is a better place for it anyhow
 
-11+84 - (Landscape of a Chef-managed Infrastructure) fixed to show that items exist, but they are not actually connected. Actual image is not modified, I just added overlays.
+95 - (Landscape of a Chef-managed Infrastructure) fixed to show that items exist, but they are not actually connected. Actual image is not modified, I just added overlays.
 - added white box to cover the arrow from workstation to server
 - adjusted image size to match other slides with same image
 
-11+85 - (Exercise: Configure Management Station) instructor notes - add a note for when this change is actually needed && change font size from 20 to 16
+96 - (Exercise: Configure Management Station) instructor notes - add a note for when this change is actually needed && change font size from 20 to 16
 
-11+89 (Workstation Setup)
+100 (Workstation Setup)
  - *** create hidden slide for manual workaround on windows - may just use one of these as unattended given that we dont actually download an OSX package via browser on a mac.
  - update URL to http://downloads.getchef.com/
  - update instructor comments 
@@ -70,31 +70,31 @@ Full list of changes also in the accompanying in the changes.txt
   <<WIP: ‘https://www.getchef.com/chef/install.msi ’ points to version 11.10.2-1 by default, so if folks use this they’ll be out of sync with those who download 11.8"
  - updated screenshot
 
-11+90 - (Install on Windows - updated screenshots)
-11+92 - (What just happened?) correct install path for windows from c:\chef to c:\opscode
+101 - (Install on Windows - updated screenshots)
+103 - (What just happened?) correct install path for windows from c:\chef to c:\opscode
 
-11+93 - (Workstation or Node?)
+104 - (Workstation or Node?)
 - fixed the slides to illustrate that nodes and workstation have similar components
 - added istructor comment - the only different is not just the command, but the certificate on the workstation.
 - added white box to cover the arrow from workstation to the server
 - adjusted image size to match other slides with same image
 
-11+94 - (Landscape of a Chef-managed Infrastructure) added '?' to illustrate nodes (same as in previous slides)
+105 - (Landscape of a Chef-managed Infrastructure) added '?' to illustrate nodes (same as in previous slides)
 - removed the arrow from workstation to server since they are not connected yet
 - adjusted image size to match other slides with same image
 
-11+95 - (Your Chef Server for this class...)
+106 - (Your Chef Server for this class...)
 - update screenshots
 - change arrow to blue(orange on orange doesnt work)
 - removed some extra images in the margins of the slide
 - chopped image to fit the slide.
 
-Warning - 11+95 -why is it important to setup a new org? I think it's the other way. We should encourage students to use their existing org, as long as it's not a company one. Keeps our chef server clean and they have one place for all their experiments.
+Warning - 106 -why is it important to setup a new org? I think it's the other way. We should encourage students to use their existing org, as long as it's not a company one. Keeps our chef server clean and they have one place for all their experiments.
 
-11+97 - **New Slide** (Create new Organization) created new slide to reflect changes in the website org creation. Got tons of questions on this via email/in person.
+108 - **New Slide** (Create new Organization) created new slide to reflect changes in the website org creation. Got tons of questions on this via email/in person.
 - ******* this slide should be added to the Linux Deck
 
-11+98 - (Download "Starter Kit" for your Org)
+109 - (Download "Starter Kit" for your Org)
  - cropped off-screen image
  - changed c:\users\you\chef-repo to c:\chef-repo - this is where I see 'mature' students stick it anyway, the rest get totally confused and some have totally lost. KISS.
  - added bullet point instead of the whole "what is the starter kit slide" - "We’ll look at it in detail shortly…"
@@ -102,10 +102,10 @@ Warning - 11+95 -why is it important to setup a new org? I think it's the other 
 
 - ********** i think the story on the Linux deck is broken here. Windows deck has better flow
 
-11+99 - (Landscape of a Chef-managed Infrastructure) adjusted image size to match other slides with same image
+110 - (Landscape of a Chef-managed Infrastructure) adjusted image size to match other slides with same image
 - added '?' to represent nodes
 
-11+106 (knife.rb)
+117 (knife.rb)
 - added (osx) behind linux path
 - added <project>/ to project specific .chef path
 
