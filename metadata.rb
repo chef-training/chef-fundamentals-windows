@@ -5,11 +5,11 @@ license           'Creative Commons Attribution-ShareALike 4.0 International (CC
 description       'Chef Fundamentals - Windows'
 version           '2.1.1'
 
-asset             "Chef-Fundamentals-Windows.key", "Presentation (Keynote)"
-asset             "Chef-Fundamentals-Windows-keynote_09.key", "Presentation (Keynote 09)"
-asset             "Chef-Fundamentals-Windows.pdf", "Presentation (PDF)"
-asset             "Chef-Fundamentals-Windows-presenter_notes.pdf", "Presentation with Presenter Notes (PDF)"
-asset             "Chef-Fundamentals-Windows-StudentHandouts.docx", "Attendee Handouts (Word)"
-asset             "Chef-Fundamentals-Windows-StudentHandouts.pdf", "Attendee Handouts (PDF)"
+asset             'Chef-Fundamentals-Windows.key', 'Presentation (Keynote)'
+asset             'Chef-Fundamentals-Windows-keynote_09.key', 'Presentation (Keynote 09)'
+asset             'Chef-Fundamentals-Windows.pdf', 'Presentation (PDF)'
+asset             'Chef-Fundamentals-Windows-presenter_notes.pdf', 'Presentation with Presenter Notes (PDF)'
+asset             'Chef-Fundamentals-Windows-StudentHandouts.docx', 'Attendee Handouts (Word)'
+asset             'Chef-Fundamentals-Windows-StudentHandouts.pdf', 'Attendee Handouts (PDF)'
 
-local_release_folder "~/Google\\ Drive/Training/Chef\\ Fundamentals\\ -\\ Windows/Releases"
+local_release_folder '~/Google\\ Drive/Training/Chef\\ Fundamentals\\ -\\ Windows/Releases'
